@@ -1,0 +1,14 @@
+program Fibonacci;
+
+uses
+  Vcl.Forms,
+  Formulario in 'Formulario.pas' {Fibonacci};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFibonacci, Fibonacci);
+  Application.Run;
+end.
